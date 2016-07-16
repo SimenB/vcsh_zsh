@@ -2,7 +2,7 @@ alias npm-pack-info='tarball="$(npm pack .)"; wc -c "${tarball}"; tar tvf "${tar
 
 # Git
 alias gits='git s'
-alias gpsup='ggpush && ggsup'
+alias gpsup='ggsup && gp'
 
 if [ "$(uname)" = "Darwin" ]; then
 	alias fuck='$(thefuck $(fc -ln -1))'

@@ -3,9 +3,6 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="agnoster"
 
-source $HOME/.zshalias
-[ -s $HOME/.local.zshrc ] && source $HOME/.local.zshrc
-
 # Make sure to just correct commands, not arguments
 # http://superuser.com/a/610025/365668
 ENABLE_CORRECTION="false"
@@ -30,6 +27,10 @@ plugins=(git z sudo brew npm mvn tmux docker kubectl osx zsh-nvm zsh-completions
 ZSH_TMUX_AUTOSTART="true"
 
 source $ZSH/oh-my-zsh.sh
+
+[ -s $HOME/.local.zshrc ] && source $HOME/.local.zshrc
+source $HOME/.zshalias
+source $HOME/.zshkeys
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'

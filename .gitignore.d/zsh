@@ -2,7 +2,6 @@
 !/.gitignore.d
 !/.gitignore.d/zsh
 !/.zlogin
-!/.zprofile
 !/.zshalias
 !/.zshenv
 !/.zshrc

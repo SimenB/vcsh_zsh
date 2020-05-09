@@ -2,6 +2,9 @@
 !/.gitignore.d
 !/.gitignore.d/zsh
 !/.zlogin
+!/.zsh
+!/.zsh/completion
+!/.zsh/completion/pulumi
 !/.zshalias
 !/.zshenv
 !/.zshrc

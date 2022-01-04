@@ -31,6 +31,10 @@ fi
 
 . $ZSH/oh-my-zsh.sh
 
+[ -s $HOME/.local.zshrc ] && source $HOME/.local.zshrc
+source $HOME/.zshalias
+source $HOME/.zshkeys
+
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else

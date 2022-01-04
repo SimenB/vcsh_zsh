@@ -7,4 +7,5 @@
 !/.zsh/completion/pulumi
 !/.zshalias
 !/.zshenv
+!/.zshkeys
 !/.zshrc

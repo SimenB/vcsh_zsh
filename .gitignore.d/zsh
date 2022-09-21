@@ -1,7 +1,7 @@
 *
 !/.gitignore.d/zsh
 !/.zlogin
+!/.zprofile
 !/.zsh/completion/pulumi
 !/.zshalias
-!/.zshenv
 !/.zshrc

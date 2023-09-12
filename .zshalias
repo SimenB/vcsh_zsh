@@ -26,9 +26,9 @@ alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Si
 
 # Kubernetes
 alias kcon='kubectl --context'
-alias kprod='kcon gke_crested-disk-192509_europe-west1-b_prod'
-alias kstaging='kcon gke_crested-disk-192509_europe-west1-b_staging'
-alias kdev='kcon gke_crested-disk-192509_europe-west1-b_dev'
+alias kprod='kcon arn:aws:eks:eu-west-1:571580010132:cluster/PRD-ZaEclA --namespace prd'
+alias kstaging='kcon arn:aws:eks:eu-west-1:043180741939:cluster/STG2-iCjkIg --namespace stg'
+alias kdev='kcon arn:aws:eks:eu-west-1:043180741939:cluster/DEV-8UO7ig --namespace simenb'
 
 # Watch
 # These exist so alias expansion works when using viddy

@@ -24,7 +24,7 @@ zstyle ':omz:plugins:yarn' global-path false
 HIST_STAMPS="dd.mm.yyyy"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-auto-fetch sudo brew npm yarn tmux docker kubectl fnm zsh-completions alias-tips rust rbenv rails gh)
+plugins=(git git-auto-fetch sudo brew npm yarn tmux docker kubectl zsh-completions alias-tips rust rails gh mise)
 
 # Automatically start a tmux session on login, unless it's from a JetBrains IDE or using ghostty
 if [[ "$TERMINAL_EMULATOR" != "JetBrains-JediTerm" && "$TERM_PROGRAM" != "Jetbrains.Fleet" && "$TERM" != "xterm-ghostty" ]]; then
@@ -78,13 +78,9 @@ eval "$(starship init zsh)"
 
 eval "$(atuin init zsh)"
 
-eval "$(fnm env --corepack-enabled --use-on-cd --shell zsh)"
-
 EAS_AC_ZSH_SETUP_PATH=$HOME/Library/Caches/eas-cli/autocomplete/zsh_setup && test -f $EAS_AC_ZSH_SETUP_PATH && source $EAS_AC_ZSH_SETUP_PATH; # eas autocomplete setup
 
 [ -f $HOME/.docker/init-zsh.sh ] && source $HOME/.docker/init-zsh.sh || true # Added by Docker Desktop
 
 [ -f $HOME/.config/broot/launcher/bash/br ] && source $HOME/.config/broot/launcher/bash/br
-
-eval "$(mise activate zsh)"
 
